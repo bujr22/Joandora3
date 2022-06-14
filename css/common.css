@@ -1,0 +1,53 @@
+@charset "UTF-8";
+body, h1, h2, h3, p, ul, li { margin: 0; padding: 0;}
+ul li {list-style: none;}
+a {text-decoration: none;}
+.hidden {position:absolute;left:-99999px;}
+body {font-family: 'Nanum Gothic', sans-serif;
+      background:linear-gradient(to bottom, #87ceeb, #fff 800px) no-repeat;
+      }
+#wrap {width: 960px; margin: 8px auto; border: 1px solid #e7e7e7; background:#fff;}
+#mainHeader {height: 278px; background:url(../images/bg_header.png); position:relative;}
+#mainHeader h1 {font-size: 50px; font-weight: 800; color:#ffff00; position: absolute; top:40px; left:20px;}
+#gnb {width: 100%;}
+#gnb ul { display: flex; height: 60px;}
+#gnb ul li {width: 25%;}
+#gnb ul li a {display: block;color:#fff;line-height: 60px; text-align: center;
+              background:#006600;}
+main {display: flex;}
+#content { padding:20px 32px 10px 20px;}
+#content article h3 {margin:15px 0 15px;}
+#content article p {margin-bottom: 12px;}
+#sidePhoto {width: 200px;background:#ddffdd; padding: 20px 10px 10px; }
+#sidePhoto img {border: 1px solid #ccc;}
+#footer {background:#061f1f;color:#fff; padding: 20px 0 20px;
+        text-align: center;}
+#footer p {}
+#footer small {}
+@media screen and (max-width: 1032px) and (min-width:600px) {
+  #wrap {width: 580px;}
+  #mainHeader h1 {font-size:40px; top:30px;}
+  #gnb {width: 100%;}
+  #gnb ul li a {font-size: 14px;}
+  #mainHeader {height: 231px;}
+  main {flex-wrap:wrap;}
+  #content {padding: 20px 10px 8px 20px;}
+  #content h2 {font-size:20px;}
+  #content h3 {font-size:16px;}
+  #content p {font-size:14px;}
+  #sidePhoto {width: 580px; display:flex; justify-content:space-evenly;}
+  #sidePhoto img {width: 176px;}
+  #footer {font-size: 12px; padding: 15px 0 4px;}
+}
+@media screen and (max-width:599px) {
+  body {background:none;}
+  #wrap {width: 100%; margin:0; border:0;}
+  #mainHeader {background:#061f1f; height: 75px;}
+  #mainHeader h1 {top: 5px; left:16px; font-size: 32px;}
+  #gnb ul {display: block; height:auto; padding: 14px 20px 0;}
+  #gnb ul li {width: auto; margin-bottom: 10px;}
+  #gnb ul li a {background:none; color:#000; line-height: 38px;
+    border:1px solid #ccc; border-radius: 10px;}
+  main {flex-direction: column;}
+  #sidePhoto {width:auto; background: none;}
+  #sidePhoto img {width: 100%;}
